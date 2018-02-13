@@ -15,13 +15,13 @@ void setup() {
   }
 }
 
-// Mode select section
-
-
-
-
 // the loop function runs over and over again forever
 void loop() {
+  // this is just to show that the arduino is running the code properly, will probably remove because a 1second delay in the main loop is bad juju
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(500);
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(500);
 }
 
 //Notes
