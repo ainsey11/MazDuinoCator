@@ -1,7 +1,7 @@
-int counter = 0;
+int Mode = 1; //Actual counter variable
 int ModeUpPin = 1; //Pin goes HIGH to increase mode
 int ModeDownPin = 2; //Pin goes LOW to decrease mode
-int Mode = 1; //Actual counter variable
+
 int LeftIndicatorPin = 3; // Pin goes HIGH to trigger left indicator sequence
 int RightIndicatorPin = 4; // Pin goes HIGH to trigger right indicator sequence
 int LEDPins[] = { 5, 6, 7, 8, 9, 10, 11, 12}; // Pins to use to drive LED circuits
@@ -33,10 +33,16 @@ void loop() {
     }
   if(ModeDownPin = HIGH)
     {
-      Mode -1;
+      Mode -1; 
     }
-  
-  
+  if (LeftIndicatorPin = HIGH)
+  {
+    // Mode selection / Pattern magic goes here
+  }
+  if (RightIndicatorPin = HIGH)
+  {
+    // Mode selection / Pattern magic goes here
+  }
 }
 
 
