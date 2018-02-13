@@ -1,7 +1,9 @@
 int counter = 0;
 int ModeUpPin = 1; //Pin goes HIGH to increase mode
 int ModeDownPin = 2; //Pin goes LOW to decrease mode
-int Mode; //Actual counter variable
+int Mode = 1; //Actual counter variable
+int LeftIndicatorPin = 3; // Pin goes HIGH to trigger left indicator sequence
+int RightIndicatorPin = 4; // Pin goes HIGH to trigger right indicator sequence
 int LEDPins[] = { 5, 6, 7, 8, 9, 10, 11, 12}; // Pins to use to drive LED circuits
 
 void setup() {
@@ -17,12 +19,26 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-  // this is just to show that the arduino is running the code properly, will probably remove because a 1second delay in the main loop is bad juju
+  // this is just to show that the arduino is running the code properly, will probably remove because a 1 second delay in the main loop is bad juju
   digitalWrite(LED_BUILTIN, HIGH);
   delay(500);
   digitalWrite(LED_BUILTIN, LOW);
   delay(500);
+
+  // do the counter button variable magic, this won't be persistant until I've done the eeprom trick below
+  digitalRead(ModeUpPin);
+  if(ModeUpPin = HIGH)
+    {
+      Mode + 1;
+    }
+  if(ModeDownPin = HIGH)
+    {
+      Mode -1;
+    }
+  
+  
 }
+
 
 //Notes
 // https://github.com/pkarsy/NonVolatile - for persistant mode selection storage maybe?
