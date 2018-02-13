@@ -20,7 +20,7 @@ void loop() {
   // this is just to show that the arduino is running the code properly, will probably remove because a 1second delay in the main loop is bad juju
   digitalWrite(LED_BUILTIN, HIGH);
   delay(500);
-  digitalWrite(LED_BUILTIN, HIGH);
+  digitalWrite(LED_BUILTIN, LOW);
   delay(500);
 }
 
