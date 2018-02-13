@@ -27,19 +27,22 @@ void loop() {
 
   // do the counter button variable magic, this won't be persistant until I've done the eeprom trick below
   digitalRead(ModeUpPin);
-  if(ModeUpPin = HIGH)
+  if(ModeUpPin == HIGH)
     {
       Mode + 1;
     }
-  if(ModeDownPin = HIGH)
+  digitalRead(ModeDownPin);
+  if(ModeDownPin == HIGH)
     {
       Mode -1; 
     }
-  if (LeftIndicatorPin = HIGH)
+  digitalRead(LeftIndicatorPin);
+  if (LeftIndicatorPin == HIGH)
   {
     // Mode selection / Pattern magic goes here
   }
-  if (RightIndicatorPin = HIGH)
+  digitalRead(RightIndicatorPin);
+  if (RightIndicatorPin == HIGH)
   {
     // Mode selection / Pattern magic goes here
   }
