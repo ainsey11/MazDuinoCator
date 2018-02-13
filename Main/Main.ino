@@ -39,15 +39,42 @@ void loop() {
   digitalRead(LeftIndicatorPin);
   if (LeftIndicatorPin == HIGH)
   {
-    // Mode selection / Pattern magic goes here
+    if (Mode = 1)
+    {
+    }
+    if (Mode = 2)
+    {
+    }
+    if (Mode = 3)
+    {
+    }
+    if (Mode = 4)
+    {
+    }
+    if (Mode = 5)
+    {
+    }
   }
   digitalRead(RightIndicatorPin);
   if (RightIndicatorPin == HIGH)
   {
-    // Mode selection / Pattern magic goes here
+    if (Mode = 1)
+    {
+    }
+    if (Mode = 2)
+    {
+    }
+    if (Mode = 3)
+    {
+    }
+    if (Mode = 4)
+    {
+    }
+    if (Mode = 5)
+    {
+    }
   }
 }
-
 
 //Notes
 // https://github.com/pkarsy/NonVolatile - for persistant mode selection storage maybe?
