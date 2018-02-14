@@ -12,7 +12,7 @@ int RightIndicatorPin = 4; // Pin goes HIGH to trigger right indicator sequence
 void setup() {
   pinMode (ModeUpPin, INPUT);
   pinMode (ModeDownPin, INPUT);
-  pinMode(LED_BUILTIN, OUTPUT); //Sets onboard LED as output (handy for testing)
+  pinMode(LED_BUILTIN, OUTPUT);
 
 }
 
