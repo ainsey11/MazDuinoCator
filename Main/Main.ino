@@ -1,5 +1,6 @@
 #include "NonVolatile.h"
 
+
 NonVolatile<int> Mode; //Actual counter variable and EEPROM 0-1
 NonVolatile<int> elevation[10]; // Uses addresses 3-22
 
@@ -7,7 +8,8 @@ int ModeUpPin = 1; //Pin goes HIGH to increase mode
 int ModeDownPin = 2; //Pin goes LOW to decrease mode
 int LeftIndicatorPin = 3; // Pin goes HIGH to trigger left indicator sequence
 int RightIndicatorPin = 4; // Pin goes HIGH to trigger right indicator sequence
-int LEDPins[] = { 5, 6, 7, 8, 9, 10, 11, 12}; // Pins to use to drive LED circuits
+
+int LEDPins[] = { 5, 6, 7, 8, 9, 10, 11, 12}; // Pins to use to drive LED circuits - Might not be needed when I have the shift register all done and in
 
 void setup() {
   pinMode (ModeUpPin, INPUT);
