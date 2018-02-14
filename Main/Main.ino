@@ -1,6 +1,7 @@
 #include "NonVolatile.h"
-#include "testLED.h"
 #include "EEPROMSave.h"
+#include "testLED.h"
+
 
 NonVolatile<int> Mode; //Actual counter variable and EEPROM 0-1
 int ModeUpPin = 1; //Pin goes HIGH to increase mode
