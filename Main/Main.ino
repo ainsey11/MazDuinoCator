@@ -1,5 +1,5 @@
 #include "NonVolatile.h"
-
+#include "testLED.h"
 
 NonVolatile<int> Mode; //Actual counter variable and EEPROM 0-1
 NonVolatile<int> elevation[10]; // Uses addresses 3-22
@@ -29,12 +29,9 @@ void setup() {
 }
 
 void loop() {
-  // this is just to show that the arduino is running the code properly, will probably remove because a 1 second delay in the main loop is bad juju
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(500);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(500);
 
+  testLED();
+  
   digitalRead(ModeUpPin);
   if(ModeUpPin == HIGH)
     {
