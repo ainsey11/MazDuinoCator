@@ -28,7 +28,6 @@ void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
 }
 
-// the loop function runs over and over again forever
 void loop() {
   // this is just to show that the arduino is running the code properly, will probably remove because a 1 second delay in the main loop is bad juju
   digitalWrite(LED_BUILTIN, HIGH);
