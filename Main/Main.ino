@@ -8,12 +8,24 @@ int ModeUpPin = 1; //Pin goes HIGH to increase mode
 int ModeDownPin = 2; //Pin goes LOW to decrease mode
 int LeftIndicatorPin = 3; // Pin goes HIGH to trigger left indicator sequence
 int RightIndicatorPin = 4; // Pin goes HIGH to trigger right indicator sequence
+int RightLatchPin = 5; // connect to ST_CP of R SR
+int RightClockPin = 6; // connect to SH_CP of R SR
+int RightDataPin = 7; // connect to DS of R SR
+int LeftLatchPin = 5; // connect to ST_CP of L SR
+int LeftClockPin = 6; // connect to SH_CP of L SR
+int LeftDataPin = 7; // connect to DS of L SR
+
 
 void setup() {
-  pinMode (ModeUpPin, INPUT);
-  pinMode (ModeDownPin, INPUT);
+  pinMode(RightLatchPin, OUTPUT);
+  pinMode(RightClockPin, OUTPUT);
+  pinMode(RightDataPin, OUTPUT);
+  pinMode(LeftLatchPin, OUTPUT);
+  pinMode(LeftClockPin, OUTPUT);
+  pinMode(LeftDataPin, OUTPUT);
+  pinMode(ModeUpPin, INPUT);
+  pinMode(ModeDownPin, INPUT);
   pinMode(LED_BUILTIN, OUTPUT);
-
 }
 
 // the loop function runs over and over again forever
