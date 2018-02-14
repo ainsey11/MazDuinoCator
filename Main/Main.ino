@@ -35,7 +35,6 @@ void loop() {
   digitalWrite(LED_BUILTIN, LOW);
   delay(500);
 
-  // do the counter button variable magic, this won't be persistant until I've done the eeprom trick below
   digitalRead(ModeUpPin);
   if(ModeUpPin == HIGH)
     {
