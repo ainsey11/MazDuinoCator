@@ -4,9 +4,9 @@ This is one of Ainsey11's wonderous projects, using arduino nano's to control ma
 
 ## Features
 - Mode select buttons 
--- Press the up button to increase the mode value by one
--- Press the down button to decrease the mode value by one
--- Holding either button down will increase the mode value rapidly
+- Press the up button to increase the mode value by one
+- Press the down button to decrease the mode value by one
+- Holding either button down will increase the mode value rapidly
 
 - 5 modes (Until I create more)
 - Persistant mode storage
