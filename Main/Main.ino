@@ -29,7 +29,7 @@ void setup() {
 
 void loop() {
 
-  testLED();
+  testLED(); // Tests onboard LED
   
   digitalRead(ModeUpPin);
   if(ModeUpPin == HIGH)
@@ -37,6 +37,7 @@ void loop() {
       Mode + 1;
       EEPROMSAVE();
     }
+    
   digitalRead(ModeDownPin);
   if(ModeDownPin == HIGH)
     {
@@ -63,6 +64,7 @@ void loop() {
     {
     }
   }
+  
   digitalRead(RightIndicatorPin);
   if (RightIndicatorPin == HIGH)
   {
