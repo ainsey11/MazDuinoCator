@@ -16,6 +16,15 @@ int LeftClockPin = 6; // connect to SH_CP of L SR
 int LeftDataPin = 7; // connect to DS of L SR
 
 
+//Pin connected to ST_CP of 74HC595
+//int latchPin = 3;
+//Pin connected to SH_CP of 74HC595
+//int clockPin = 4;
+////Pin connected to DS of 74HC595
+//int dataPin = 2;
+
+
+
 void setup() {
   pinMode(RightLatchPin, OUTPUT);
   pinMode(RightClockPin, OUTPUT);
